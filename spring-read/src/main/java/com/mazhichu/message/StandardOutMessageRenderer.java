@@ -13,9 +13,10 @@ public class StandardOutMessageRenderer implements MessageRenderer{
 
 	@Override
 	public void render() {
-		if (null == messageProvider){
+		if (null == messageProvider) {
 			throw new RuntimeException("You must set the property messageProvider of class:" + StandardOutMessageRenderer.class.getName());
 		}
+		System.out.println("render ok");
 	}
 
 	@Override
